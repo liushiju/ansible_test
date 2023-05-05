@@ -1,6 +1,8 @@
 #!/bin/sh
 
-ansible_file=$(find / -name ansible*tar.gz)
+dir_name=$(dirname $0)
+
+ansible_file=$(find `dir_name` -name ansible*tar.gz)
 
 tar -xzf ${ansible_file} -C /tmp/
 

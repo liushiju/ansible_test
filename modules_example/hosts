@@ -1,0 +1,6 @@
+# ansible 清单目录
+
+[k8s]
+192.168.0.200 manager=true
+192.168.0.201 manager=false
+192.168.0.202 manager=false

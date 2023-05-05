@@ -1,0 +1,8 @@
+- name: shell 模块测试
+  shell: echo "hello world"
+  register: shell_test
+  # 当条件成立时，将对应任务的执行状态置为失败，不会影响后续任务的执行，
+  # 只会在条件成立时，将对应任务的执行状态置为失败。
+  failed_when: false
+  debug:
+    var: shell_test
