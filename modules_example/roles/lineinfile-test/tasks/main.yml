@@ -5,7 +5,7 @@
     line: 'SELINUX=disabled'
     state: present
     backup: 'yes'
-    register: linefile_test
+  register: linefile_test
   ignore_errors: true
 - debug: var=linefile_test.results
 
@@ -15,7 +15,7 @@
     regexp: '^%wheel'
     state: absent
     backup: yes
-    register: linefile_test
+  register: linefile_test
 - debug: var=linefile_test.results
 
 - name: 替换hosts中127.0.0.1为127.0.0.1 localhost
@@ -28,7 +28,7 @@
     mode: '0644'
     state: present
     backup: yes
-    register: linefile_test
+  register: linefile_test
 - debug: var=linefile_test.results
 
 - name: 在/tmp/testfile中添加一行
@@ -37,5 +37,5 @@
     line: 'This is a test line'
     create: yes
     state: present
-    register: linefile_test
+  register: linefile_test
 - debug: var=linefile_test.results
