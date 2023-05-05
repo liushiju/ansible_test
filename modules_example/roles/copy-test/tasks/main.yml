@@ -1,4 +1,4 @@
-- name: {{ COPY_NAME }}
+- name: "{{ COPY_NAME }}"
   copy:
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
