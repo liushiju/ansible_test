@@ -22,6 +22,13 @@ ansible 2.9.24
 
 ## ansible 常用模块
 
+| 模块 | 地址 |
+| --- | --- |
+| shell | [shell模块](modules_example/roles/shell-test/README.md) |
+| copy | [copy模块](modules_example/roles/copy-test/README.md) |
+| lineinfile | [lineinfile模块](modules_example/roles/lineinfile-test/README.md) |
+| file | [file模块](modules_example/roles/file-test/README.md) |
+
 ### shell 模块
 - [shell模块](modules_example/roles/shell-test/README.md)
 
