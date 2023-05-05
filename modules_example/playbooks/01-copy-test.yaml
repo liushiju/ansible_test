@@ -1,4 +1,4 @@
-- import_playbook: gather-facts.yaml
+- import_playbook: gather-facts.yml
 - hosts: k8s
   gather_facts: no
   roles:
