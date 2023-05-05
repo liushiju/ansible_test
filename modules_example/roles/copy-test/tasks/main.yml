@@ -1,9 +1,10 @@
+- import_playbook: gather-facts.yml
 - name: "{{ COPY_NAME }}"
   copy:
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
+    backup: 'yes'
   with_items:
     - { src: "test.txt", dest: "{{ tmp_dir }}/test.txt" }
-  backup: 'yes'
   register: copy_test
 - debug: var=copy_test.results

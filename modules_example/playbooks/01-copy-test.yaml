@@ -1,4 +1,3 @@
 - hosts: k8s
-  gather_facts: no
   roles:
     - copy-test
