@@ -1,4 +1,3 @@
-- import_playbook: gather-facts.yml
 - name: "{{ COPY_NAME }}"
   copy:
     src: "{{ item.src }}"
