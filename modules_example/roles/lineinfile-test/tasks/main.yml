@@ -24,8 +24,6 @@
     mode: '0644'
     state: present
     backup: yes
-  register: lineinfile_test
-- debug: var=lineinfile_test.results
 
 - name: 在/tmp/testfile中添加一行
   lineinfile:
@@ -33,5 +31,3 @@
     line: "This is a test line {{ LINEINFILE_NAME }}"
     create: yes
     state: present
-  register: lineinfile_test
-- debug: var=lineinfile_test.results
