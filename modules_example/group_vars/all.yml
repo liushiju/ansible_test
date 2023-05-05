@@ -3,3 +3,6 @@ SHELL_NAME: "shell 模块测试"
 
 ########## copy-test ############
 COPY_NAME: "copy 模块测试"
+
+########## linefile-test ############
+LINEFILE_NAME: "linefile 模块测试"
