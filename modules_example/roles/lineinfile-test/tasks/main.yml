@@ -14,7 +14,7 @@
     state: absent
     backup: yes
 
-- name: 替换hosts中127.0.0.1为127.0.0.1 localhost
+- name: 在hosts中以127.0.0.1开头的行替换为127.0.0.1 localhost
   lineinfile:
     path: /etc/hosts
     regexp: '^127\.0\.0\.1'
