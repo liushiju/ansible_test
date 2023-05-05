@@ -4,7 +4,7 @@
     regexp: '^SELINUX='
     line: 'SELINUX=disabled'
     state: present
-    ignorecase: True
+    ignore_errors: true
     backup: yes
     register: linefile_test
 - debug: var=linefile_test.results
