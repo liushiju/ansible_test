@@ -5,9 +5,7 @@
     line: 'SELINUX=disabled'
     state: present
     backup: 'yes'
-  register: linefile_test
   ignore_errors: true
-- debug: var=linefile_test.results
 
 - name: 确保sudoers中没有wheel组
   lineinfile:
@@ -15,27 +13,25 @@
     regexp: '^%wheel'
     state: absent
     backup: yes
-  register: linefile_test
-- debug: var=linefile_test.results
 
 - name: 替换hosts中127.0.0.1为127.0.0.1 localhost
   lineinfile:
     path: /etc/hosts
-    search_string: '127.0.0.1'
+    regexp: '^127\.0\.0\.1'
     line: '127.0.0.1 localhost'
     owner: root
     group: root
     mode: '0644'
     state: present
     backup: yes
-  register: linefile_test
-- debug: var=linefile_test.results
+  register: lineinfile_test
+- debug: var=lineinfile_test.results
 
 - name: 在/tmp/testfile中添加一行
   lineinfile:
     path: /tmp/testfile
-    line: 'This is a test line'
+    line: "This is a test line {{ LINEINFILE_NAME }}"
     create: yes
     state: present
-  register: linefile_test
-- debug: var=linefile_test.results
+  register: lineinfile_test
+- debug: var=lineinfile_test.results
