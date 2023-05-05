@@ -7,4 +7,4 @@
     - "{{ data_dir }}/data03"
     - "{{ data_dir }}/data04"
     - "{{ data_dir }}/data05"
-when: manager == 'true'
+  when: manager == 'true'
