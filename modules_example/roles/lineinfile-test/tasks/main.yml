@@ -4,9 +4,9 @@
     regexp: '^SELINUX='
     line: 'SELINUX=disabled'
     state: present
-    ignore_errors: true
     backup: yes
     register: linefile_test
+  ignore_errors: true
 - debug: var=linefile_test.results
 
 - name: 确保sudoers中没有wheel组
