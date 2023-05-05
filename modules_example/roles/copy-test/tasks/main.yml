@@ -1,0 +1,8 @@
+- name: {{ COPY_NAME }}
+  copy:
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - { src: "test.txt", dest: "{{ tmp_dir }}/test.txt" }
+  register: copy_test
+- debug: var=copy_test.results

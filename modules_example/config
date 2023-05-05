@@ -1,0 +1,10 @@
+# 安装目录
+soft_dir: /opt
+
+# 数据目录
+data_dir: /data
+
+# 临时目录
+tmp_dir: /tmp
+
+######### Config #########

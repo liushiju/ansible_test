@@ -1,2 +1,5 @@
 ########## shell-test ############
 SHELL_NAME: "shell 模块测试"
+
+########## copy-test ############
+COPY_NAME: "copy 模块测试"
