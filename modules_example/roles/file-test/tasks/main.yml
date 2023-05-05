@@ -1,0 +1,10 @@
+- block:
+  - name: 创建目录
+    file: name={{ item }} state=directory
+    with_items:
+    - "{{ data_dir }}/data01"
+    - "{{ data_dir }}/data02"
+    - "{{ data_dir }}/data03"
+    - "{{ data_dir }}/data04"
+    - "{{ data_dir }}/data05"
+when: manager == 'true'
