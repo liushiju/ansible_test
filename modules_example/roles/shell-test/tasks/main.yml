@@ -4,5 +4,11 @@
   # 当条件成立时，将对应任务的执行状态置为失败，不会影响后续任务的执行，
   # 只会在条件成立时，将对应任务的执行状态置为失败。
   failed_when: false
-  debug:
-    var: shell_test
+- debug: var=shell_test.stdout_lines
+
+- name: shell 模块测试 02
+  shell: | 
+    echo "{{ SHELL_NAME }}" 02
+    echo "line 02"
+  register: shell_test_02
+- debug: var=shell_test_02.stdout_lines
