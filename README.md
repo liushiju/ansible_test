@@ -28,4 +28,5 @@ ansible 2.9.24
 ### copy 模块
 - [copy模块](modules_example/roles/copy-test/README.md)
 
-
+### lineinfile 模块
+- [lineinfile模块](modules_example/roles/lineinfile-test/README.md)
