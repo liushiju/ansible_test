@@ -1,4 +1,4 @@
-- name: "{{ LINEFILE_NAME }}" 设置SELinux为disabled模式
+- name: "{{ LINEFILE_NAME }}"
   lineinfile:
     path: /etc/selinux/config
     regexp: '^SELINUX='
