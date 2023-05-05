@@ -30,3 +30,6 @@ ansible 2.9.24
 
 ### lineinfile 模块
 - [lineinfile模块](modules_example/roles/lineinfile-test/README.md)
+
+### file 模块
+- [file模块](modules_example/roles/file-test/README.md)
