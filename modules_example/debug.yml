@@ -4,5 +4,5 @@
   tasks:
   - name: 测试debug
     debug:
-      msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}
+      msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }} {{ ansible_default_ipv4['address'].split('.')[-1] }}
     when: ansible_default_ipv4.gateway is defined
