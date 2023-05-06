@@ -1,2 +1,1 @@
----
 - my_os: "{{ ansible_os_family }}"
