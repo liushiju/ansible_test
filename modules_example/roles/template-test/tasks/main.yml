@@ -1,5 +1,5 @@
 - name: 导入配置文件
-  template: src=my.cnf.j2 dest={{ data_dir }}/my.cnf owner=mysql group=mysql
+  template: src=my.cnf.j2 dest={{ data_dir }}/my.cnf owner=root group=root mode=0644
   register: mysql_config_file
   tags: mysql_config_file
-- debug: var=mysql_config_file.changed
+- debug: var=mysql_config_file
