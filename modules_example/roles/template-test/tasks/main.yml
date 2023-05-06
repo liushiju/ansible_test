@@ -3,4 +3,5 @@
   register: mysql_config_file
   tags: mysql_config_file
 - debug: var=mysql_config_file
-- debug: var=ansible_default_ipv4.address
+- debug:
+    msg: "{{ ansible_default_ipv4.address }}"
