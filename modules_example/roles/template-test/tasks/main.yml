@@ -3,4 +3,4 @@
   register: mysql_config_file
 - debug: var=mysql_config_file
 - debug:
-    msg: "{{ my_ip }}"
+    msg: "{{ my_os }}"
