@@ -1,3 +1,8 @@
-- debug:
-    msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}
-  when: ansible_default_ipv4.gateway is defined
+---
+- hosts: k8s
+  gather_facts: yes
+  tasks:
+  - name: 测试debug
+    debug:
+      msg: System {{ inventory_hostname }} has gateway {{ ansible_default_ipv4.gateway }}
+    when: ansible_default_ipv4.gateway is defined
