@@ -6,3 +6,10 @@ COPY_NAME: "copy 模块测试"
 
 ########## lineinfile-test ############
 LINEINFILE_NAME: "lineinfile 模块测试"
+
+######MYSQL#######
+MYSQL_VERSION: "mysql-5.7.35-linux-glibc2.12-x86_64"
+MYSQL_SOFT_DIR: "{{ soft_dir }}/mysql"
+MYSQL_DATA_DIR: "{{ data_dir }}/mysql/data"
+MYSQL_LOG_DIR: "{{ data_dir }}/mysql/logs"
+

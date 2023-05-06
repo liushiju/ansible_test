@@ -41,9 +41,10 @@ ansible-playbook -i hosts -e@config playbooks/xxx.yml
 
 ## 三、ansible 常用模块
 
-|           |  |          | | | |          | |
-|-----------| --- |----------| --- | --- | --- |----------| --- |
-| **shell** | [shell模块](modules_example/roles/shell-test/README.md) | **copy** | [copy模块](modules_example/roles/copy-test/README.md) |**lineinfile** | [lineinfile模块](modules_example/roles/lineinfile-test/README.md) | **file** | [file模块](modules_example/roles/file-test/README.md) |
+|           |  |          | | | |          | | | |
+|-----------| --- |----------| --- | --- | --- |----------| --- | --- | --- |
+| **shell** | [shell模块](modules_example/roles/shell-test/README.md) | **copy** | [copy模块](modules_example/roles/copy-test/README.md) |**lineinfile** | [lineinfile模块](modules_example/roles/lineinfile-test/README.md) | **file** | [file模块](modules_example/roles/file-test/README.md) | **template** | [template模块](modules_example/roles/template-test/README.md) |
+
 
 ### shell 模块
 - [shell模块](modules_example/roles/shell-test/README.md)
@@ -56,3 +57,6 @@ ansible-playbook -i hosts -e@config playbooks/xxx.yml
 
 ### file 模块
 - [file模块](modules_example/roles/file-test/README.md)
+
+### template 模块
+- [template模块](modules_example/roles/template-test/README.md)

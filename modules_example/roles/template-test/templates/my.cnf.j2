@@ -1,0 +1,22 @@
+[mysqld]
+basedir={{ MYSQL_SOFT_DIR }}/{{ MYSQL_VERSION }}
+datadir={{ MYSQL_DATA_DIR }}
+socket={{ data_dir }}/mysql/mysql.sock
+log_error={{ MYSQL_LOG_DIR }}/mysql.log
+port=3306
+server_id={{ my_id }}
+log_bin={{ MYSQL_LOG_DIR }}/mysql-bin
+binlog_format=row
+max_binlog_size = 1G
+binlog_cache_size = 512M
+expire_logs_days = 7
+gtid-mode=on
+enforce-gtid-consistency=true
+max_allowed_packet=500M
+max_connections=1000
+wait_timeout=600
+log-slave-updates=1
+lower_case_table_names=1
+sql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+character-set-server = utf8mb4
+collation-server = utf8mb4_general_ci

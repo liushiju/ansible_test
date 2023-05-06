@@ -7,4 +7,10 @@ data_dir: /data
 # 临时目录
 tmp_dir: /tmp
 
-######### Config #########
+######### template #########
+TEMPLATE_TEST: true
+
+######MYSQL######
+# 若使用外部数据库填写mysql帐号密码,MYSQL_INSTALL配置为false
+MYSQL_USER: root
+MYSQL_PASSWORD: "Mysql^uHHsWrf7mK"

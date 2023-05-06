@@ -1,0 +1,5 @@
+- hosts: k8s
+  become: yes
+  roles:
+    - { role: k8s, when: TEMPLATE_TEST }
+  tags: k8s
