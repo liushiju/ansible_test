@@ -2,4 +2,4 @@
   become: yes
   roles:
     - { role: k8s, when: TEMPLATE_TEST }
-  tags: k8s
+  tags: mysql_config_file

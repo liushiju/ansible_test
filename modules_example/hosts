@@ -4,3 +4,11 @@
 192.168.0.200 manager=true
 192.168.0.201 manager=false
 192.168.0.202 manager=false
+
+[mysql]
+192.168.0.200 mysql_role=master
+192.168.0.201 mysql_role=slave
+
+
+[all:vars]
+TEMPLATE_TEST=true
