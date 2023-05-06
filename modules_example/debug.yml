@@ -1,6 +1,6 @@
 ---
 - hosts: k8s
-  gather_facts: yes
+  gather_facts: no
   tasks:
   - name: 测试debug
     debug:
