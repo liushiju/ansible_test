@@ -2,3 +2,5 @@
   gather_facts: no
   roles:
     - { role: template-test, when: TEMPLATE_TEST }
+  tags:
+    - template-test
