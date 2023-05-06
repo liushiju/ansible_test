@@ -1,5 +1,5 @@
 - hosts: k8s
   become: yes
   roles:
-    - { role: k8s, when: TEMPLATE_TEST }
-  tags: mysql_config_file
+    - { role: template-test, when: TEMPLATE_TEST }
+  tags: mysql
