@@ -1,0 +1,2 @@
+- name: 复制包并展开
+  unarchive: src={{ soft_dir }}/test.tar.gz dest={{ data_dir }}  copy=yes mode=0755
