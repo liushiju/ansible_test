@@ -14,3 +14,4 @@ TEMPLATE_TEST: true
 # 若使用外部数据库填写mysql帐号密码,MYSQL_INSTALL配置为false
 MYSQL_USER: root
 MYSQL_PASSWORD: "Mysql^uHHsWrf7mK"
+ANSIBLE_VERSION: "{{ ansible_version }}"
