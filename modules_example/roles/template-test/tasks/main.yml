@@ -2,5 +2,4 @@
   template: src=my.cnf.j2 dest={{ data_dir }}/my.cnf owner=root group=root mode=0644
   register: mysql_config_file
 - debug: var=mysql_config_file
-- debug:
-    msg: "{{ my_os }}"
+- debug: msg="{{ my_os }}"
